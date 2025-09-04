@@ -7,7 +7,7 @@ Step 1.除了研讀該論文，也要研讀論文裡引用之論文  《Low-Area
 
 Step 2.論文只將現有的公式進一步優化，並且未給代碼。因此要自己慢慢揣摩，先實作於matlab，最後在實作於verilog
 
-Step 3.實作濾波器長度為24-tap  位元寬為16bit，因太花時間加上其他大同小異，就沒有繼續作。結果如下
+Step 3.實作濾波器長度為24-tap  位元寬為16bit，因太花時間加上其他大同小異，就沒有繼續作。結果如下(DC綜合用180nm process，後模擬功能皆正常、無時序違規，有需要自己拿去綜合看結果，此不提供相關數據)
 
 ![image](https://github.com/108350035/reproduction-study/blob/main/matlab.jpg)
 

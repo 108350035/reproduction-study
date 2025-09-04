@@ -1,0 +1,68 @@
+Information: Updating design information... (UID-85)
+Warning: Design 'fir' contains 2 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : fir
+Version: O-2018.06-SP1
+Date   : Thu Sep  4 12:29:24 2025
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: ss_typical_max_1p62v_125c   Library: sc7_cl018g_base_rvt_ss_typical_max_1p62v_125c
+Wire Load Model Mode: top
+
+  Startpoint: x6k_3[1] (input port clocked by clk)
+  Endpoint: x6k_1_sub_x6k_3_reg_reg[15]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fir                Small                 sc7_cl018g_base_rvt_ss_typical_max_1p62v_125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                   10.00      10.00 r
+  x6k_3[1] (in)                                           0.00      10.00 r
+  U20189/Y (INVX2M)                                       0.08      10.08 f
+  U20190/Y (NOR2X1M)                                      0.31      10.39 r
+  U11879/Y (INVX1M)                                       0.25      10.65 f
+  U11880/Y (OAI222X1M)                                    0.66      11.31 r
+  U11881/Y (OAI222X1M)                                    0.84      12.15 f
+  U8646/Y (OAI222X2M)                                     0.77      12.92 r
+  U11882/Y (OAI222X1M)                                    0.78      13.70 f
+  U11883/Y (OAI222X1M)                                    0.88      14.58 r
+  U9309/Y (OAI222X2M)                                     0.63      15.21 f
+  U9470/Y (OAI222X4M)                                     0.56      15.77 r
+  U8645/Y (OAI222X2M)                                     0.55      16.32 f
+  U9472/Y (OAI222X4M)                                     0.59      16.91 r
+  U9474/Y (OAI222X4M)                                     0.44      17.35 f
+  U9473/Y (OAI222X4M)                                     0.47      17.82 r
+  U11884/Y (OAI222X1M)                                    0.57      18.39 f
+  U20386/Y (INVX1M)                                       0.38      18.78 r
+  U9117/Y (AOI222X2M)                                     0.31      19.09 f
+  U9083/Y (AOI222X2M)                                     0.56      19.65 r
+  x6k_1_sub_x6k_3_reg_reg[15]/D (DFFRQX2M)                0.00      19.65 r
+  data arrival time                                                 19.65
+
+  clock clk (rise edge)                                  20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  x6k_1_sub_x6k_3_reg_reg[15]/CK (DFFRQX2M)               0.00      20.00 r
+  library setup time                                     -0.35      19.65
+  data required time                                                19.65
+  --------------------------------------------------------------------------
+  data required time                                                19.65
+  data arrival time                                                -19.65
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1

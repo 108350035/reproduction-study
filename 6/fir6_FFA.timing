@@ -1,0 +1,86 @@
+Information: Updating design information... (UID-85)
+Warning: Design 'fir' contains 2 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : fir
+Version: O-2018.06-SP1
+Date   : Thu Sep  4 12:27:41 2025
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: ss_typical_max_1p62v_125c   Library: sc7_cl018g_base_rvt_ss_typical_max_1p62v_125c
+Wire Load Model Mode: top
+
+  Startpoint: H4_add_reg_reg[0][1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: y6k_2_temp_reg[31]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fir                Small                 sc7_cl018g_base_rvt_ss_typical_max_1p62v_125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  H4_add_reg_reg[0][1]/CK (DFFRQX2M)       0.00 #     0.00 r
+  H4_add_reg_reg[0][1]/Q (DFFRQX2M)        0.56       0.56 f
+  U12689/Y (INVX1M)                        0.34       0.90 r
+  U24963/Y (NAND2X4M)                      0.22       1.12 f
+  U24964/Y (OAI222X2M)                     0.56       1.68 r
+  U14053/Y (OAI222X1M)                     0.73       2.42 f
+  U24965/Y (OAI222X2M)                     0.75       3.17 r
+  U24966/Y (OAI222X2M)                     0.48       3.65 f
+  U14054/Y (OAI222X1M)                     0.76       4.41 r
+  U24967/Y (OAI222X2M)                     0.50       4.90 f
+  U16611/Y (OAI222X1M)                     0.77       5.67 r
+  U12732/Y (OAI222X2M)                     0.50       6.17 f
+  U11525/Y (OAI222X1M)                     0.77       6.94 r
+  U12490/Y (OAI222X2M)                     0.58       7.52 f
+  U12736/Y (OAI222X4M)                     0.54       8.07 r
+  U24970/Y (OAI222X2M)                     0.45       8.52 f
+  U24972/Y (OAI222X2M)                     0.75       9.26 r
+  U12742/Y (OAI222X4M)                     0.46       9.73 f
+  U12741/Y (OAI222X4M)                     0.50      10.23 r
+  U24974/Y (OAI222X2M)                     0.45      10.68 f
+  U24976/Y (OAI222X2M)                     0.75      11.42 r
+  U12744/Y (OAI222X4M)                     0.46      11.89 f
+  U12743/Y (OAI222X4M)                     0.54      12.43 r
+  U12746/Y (OAI222X4M)                     0.41      12.84 f
+  U12745/Y (OAI222X4M)                     0.53      13.38 r
+  U12748/Y (OAI222X4M)                     0.41      13.79 f
+  U12747/Y (OAI222X4M)                     0.48      14.27 r
+  U24979/Y (OAI222X2M)                     0.43      14.70 f
+  U11526/Y (OAI222X1M)                     0.71      15.41 r
+  U14055/Y (OAI222X1M)                     0.55      15.96 f
+  U11747/Y (INVX1M)                        0.41      16.37 r
+  U24981/Y (AOI222X2M)                     0.33      16.69 f
+  U24983/Y (AOI222X2M)                     0.80      17.49 r
+  U14825/Y (AOI2BB2X1M)                    0.37      17.86 f
+  U11688/CO (ADDFX1M)                      0.74      18.60 f
+  U15762/Y (XNOR3XLM)                      0.63      19.23 f
+  U15761/Y (XNOR2XLM)                      0.40      19.63 r
+  y6k_2_temp_reg[31]/D (DFFRQX2M)          0.00      19.63 r
+  data arrival time                                  19.63
+
+  clock clk (rise edge)                   20.00      20.00
+  clock network delay (ideal)              0.00      20.00
+  y6k_2_temp_reg[31]/CK (DFFRQX2M)         0.00      20.00 r
+  library setup time                      -0.37      19.63
+  data required time                                 19.63
+  -----------------------------------------------------------
+  data required time                                 19.63
+  data arrival time                                 -19.63
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+1

@@ -1,0 +1,92 @@
+Information: Updating design information... (UID-85)
+Warning: Design 'fir' contains 2 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : fir
+Version: O-2018.06-SP1
+Date   : Thu Sep  4 12:22:15 2025
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: ss_typical_max_1p62v_125c   Library: sc7_cl018g_base_rvt_ss_typical_max_1p62v_125c
+Wire Load Model Mode: top
+
+  Startpoint: x4k_2_reg_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: H2_mult_reg_reg[2][31]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fir                Small                 sc7_cl018g_base_rvt_ss_typical_max_1p62v_125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  x4k_2_reg_reg[0]/CK (DFFRQX2M)           0.00 #     0.00 r
+  x4k_2_reg_reg[0]/Q (DFFRQX2M)            0.82       0.82 f
+  U13853/Y (NOR2X1M)                       0.57       1.39 r
+  U13856/Y (NAND3X1M)                      0.54       1.93 f
+  U13857/Y (NOR2X1M)                       0.51       2.44 r
+  U13859/Y (NAND2X1M)                      0.58       3.02 f
+  U13860/Y (NOR2X1M)                       0.71       3.73 r
+  U13861/Y (INVX1M)                        0.33       4.06 f
+  U13862/Y (NOR2X1M)                       0.58       4.64 r
+  U9681/Y (INVX2M)                         0.32       4.96 f
+  U13863/Y (NOR2X2M)                       0.50       5.46 r
+  U9652/Y (NAND2X2M)                       0.28       5.73 f
+  U9951/Y (INVX1M)                         0.24       5.98 r
+  U9611/Y (NAND2X2M)                       0.29       6.27 f
+  U9591/Y (NOR2X2M)                        0.67       6.93 r
+  U9577/Y (NAND2X2M)                       0.38       7.31 f
+  U8794/Y (NOR2X1M)                        1.08       8.39 r
+  U13880/Y (NAND2X1M)                      0.38       8.77 f
+  U8814/Y (CLKINVX1M)                      0.81       9.58 r
+  U9448/Y (NOR2X4M)                        0.52      10.10 f
+  U8795/Y (CLKINVX1M)                      0.97      11.07 r
+  U14513/Y (AOI2BB1X1M)                    0.76      11.84 r
+  U13310/Y (INVX1M)                        0.40      12.23 f
+  U14514/Y (AOI22X1M)                      0.38      12.62 r
+  U14515/Y (XNOR3XLM)                      0.44      13.06 f
+  U14583/S (ADDFX1M)                       0.73      13.79 f
+  U10346/Y (INVX1M)                        0.20      13.99 r
+  U10611/Y (NOR2X1M)                       0.17      14.16 f
+  U10612/Y (OAI21X1M)                      0.36      14.52 r
+  U10614/Y (AOI21X1M)                      0.35      14.87 f
+  U10616/Y (OAI21X1M)                      0.41      15.28 r
+  U10617/Y (AOI21X1M)                      0.35      15.64 f
+  U10618/Y (OAI21X1M)                      0.41      16.05 r
+  U8859/Y (AOI21X1M)                       0.35      16.40 f
+  U8813/Y (OAI21X1M)                       0.41      16.81 r
+  U13303/Y (AOI21X1M)                      0.35      17.17 f
+  U10620/Y (OAI21X1M)                      0.41      17.58 r
+  U10621/Y (AOI21X1M)                      0.35      17.93 f
+  U10622/Y (OAI21X1M)                      0.41      18.34 r
+  U10623/Y (AOI21X1M)                      0.35      18.70 f
+  U12076/Y (OAI21X1M)                      0.41      19.11 r
+  U12720/Y (AOI21X1M)                      0.29      19.40 f
+  U8822/Y (XOR2X1M)                        0.25      19.65 r
+  H2_mult_reg_reg[2][31]/D (DFFRQX2M)      0.00      19.65 r
+  data arrival time                                  19.65
+
+  clock clk (rise edge)                   20.00      20.00
+  clock network delay (ideal)              0.00      20.00
+  H2_mult_reg_reg[2][31]/CK (DFFRQX2M)     0.00      20.00 r
+  library setup time                      -0.35      19.65
+  data required time                                 19.65
+  -----------------------------------------------------------
+  data required time                                 19.65
+  data arrival time                                 -19.65
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+1

@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : fir
+Version: O-2018.06-SP1
+Date   : Thu Sep  4 12:09:07 2025
+****************************************
+
+Library(s) Used:
+
+    sc7_cl018g_base_rvt_ss_typical_max_1p62v_125c (File: /home/synopsys/syn/O-2018.06-SP1/libraries/CL018G/STD/TS02LB000-FB-00000-r8p0-03eac0/arm/tsmc/cl018g/sc7_base_rvt/r8p0/db/sc7_cl018g_base_rvt_ss_typical_max_1p62v_125c.db)
+
+Number of ports:                           66
+Number of nets:                          9749
+Number of cells:                         7849
+Number of combinational cells:           6038
+Number of sequential cells:              1811
+Number of macros/black boxes:               0
+Number of buf/inv:                       1013
+Number of references:                      75
+
+Combinational area:             148608.455769
+Buf/Inv area:                     6679.993498
+Noncombinational area:           83498.824577
+Macro/Black Box area:                0.000000
+Net Interconnect area:               0.000000
+
+Total cell area:                232107.280346
+Total area:                     232107.280346
+1

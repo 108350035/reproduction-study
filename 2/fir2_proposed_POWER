@@ -1,0 +1,51 @@
+Information: Running time_based power analysis... (PWR-601)
+Information: The waveform options are:
+		File name:	vcd.out
+		File format:	out
+		Time interval:	1ns
+		Hierarchical level:	all
+
+Information: Power analysis is running, please wait ...
+
+Information: analysis is done for time window (0ns - 655410ns)
+
+****************************************
+Report : Time Based Power
+Design : fir
+Version: O-2018.06-SP1
+Date   : Sun Sep 14 16:21:20 2025
+****************************************
+
+
+
+  Attributes
+  ----------
+      i  -  Including register clock pin internal power
+      u  -  User defined power group
+
+                        Internal  Switching  Leakage    Total
+Power Group             Power     Power      Power      Power   (     %)  Attrs
+--------------------------------------------------------------------------------
+clock_network              0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+register                5.291e-03 1.043e-03 1.633e-06 6.335e-03 (26.18%)  i
+combinational              0.0105 7.396e-03 3.938e-06    0.0179 (73.82%)  
+sequential                 0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+memory                     0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+io_pad                     0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+black_box                  0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+
+  Net Switching Power  = 8.439e-03   (34.87%)
+  Cell Internal Power  =    0.0158   (65.10%)
+  Cell Leakage Power   = 5.571e-06   ( 0.02%)
+    Intrinsic Leakage  = 5.571e-06
+    Gate Leakage       =    0.0000
+                         ---------
+Total Power            =    0.0242  (100.00%)
+
+X Transition Power     =    0.0000
+Glitching Power        =    0.0000
+
+Peak Power             =    0.1473
+Peak Time              =    276060
+
+1
